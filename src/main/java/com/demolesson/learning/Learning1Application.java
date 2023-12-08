@@ -17,6 +17,7 @@ public class Learning1Application {
     @Bean
     public CommandLineRunner commandLineRunner(IStudentDAO studentDAO){
         return runner -> {
+
             //createStudent(studentDAO);
 
             createMultibleStudent(studentDAO);
