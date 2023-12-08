@@ -19,10 +19,28 @@ public class Learning1Application {
         return runner -> {
             //createStudent(studentDAO);
 
-           // createMultibleStudent(studentDAO);
+            createMultibleStudent(studentDAO);
             //findStudent(studentDAO);
-            findAll(studentDAO);
+            //findAll(studentDAO);
+            //updateStudent(studentDAO);
+            //removeStudent(studentDAO);
         };
+    }
+
+    private void removeStudent(IStudentDAO studentDAO) {
+        studentDAO.removeStudent(1);
+        System.out.println("Deleted data => ");
+    }
+
+    private void updateStudent(IStudentDAO studentDAO) {
+        Student student = studentDAO.findById(1);
+        if(student != null){
+            student.setFirstName("Ibrahim Halil");
+            studentDAO.updateFields(student);
+            System.out.println("Kaydedildi!!");
+            return;
+        }
+        System.out.println("Elimizde yok!!");
     }
 
     private void findAll(IStudentDAO studentDAO) {

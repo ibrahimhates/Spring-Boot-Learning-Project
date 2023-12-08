@@ -3,6 +3,8 @@ package com.demolesson.learning.dao;
 import com.demolesson.learning.entity.Student;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
@@ -41,5 +43,18 @@ public class StudentDAO implements IStudentDAO{
         query.setParameter("theData",lastName);
 
         return query.getResultList();
+    }
+
+    @Transactional
+    @Override
+    public void updateFields(Student theStudent) {
+        manager.merge(theStudent);
+    }
+
+    @Transactional
+    @Override
+    public void removeStudent(int id) {
+        Student student = findById(id);
+        manager.remove(student);
     }
 }
