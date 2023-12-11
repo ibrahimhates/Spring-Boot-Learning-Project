@@ -20,7 +20,7 @@ public class Learning1Application {
 
             //createStudent(studentDAO);
 
-            createMultibleStudent(studentDAO);
+            //createMultibleStudent(studentDAO);
             //findStudent(studentDAO);
             //findAll(studentDAO);
             //updateStudent(studentDAO);
