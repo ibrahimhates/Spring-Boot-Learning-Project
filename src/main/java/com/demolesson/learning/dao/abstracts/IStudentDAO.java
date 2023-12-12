@@ -1,4 +1,4 @@
-package com.demolesson.learning.dao;
+package com.demolesson.learning.dao.abstracts;
 
 import com.demolesson.learning.entity.Student;
 

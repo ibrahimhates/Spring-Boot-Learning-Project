@@ -1,5 +1,6 @@
-package com.demolesson.learning.dao;
+package com.demolesson.learning.dao.concretes;
 
+import com.demolesson.learning.dao.abstracts.IStudentDAO;
 import com.demolesson.learning.entity.Student;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public class StudentDAO implements IStudentDAO{
+public class StudentDAO implements IStudentDAO {
     private final EntityManager manager;
 
     @Autowired

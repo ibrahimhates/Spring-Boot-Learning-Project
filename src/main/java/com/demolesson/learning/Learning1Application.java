@@ -1,6 +1,6 @@
 package com.demolesson.learning;
 
-import com.demolesson.learning.dao.IStudentDAO;
+import com.demolesson.learning.dao.abstracts.IStudentDAO;
 import com.demolesson.learning.entity.Student;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
