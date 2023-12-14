@@ -1,4 +1,4 @@
-package com.demolesson.learning.dao.abstracts;
+package com.demolesson.learning.repositories.abstracts;
 
 import com.demolesson.learning.entity.Employee;
 

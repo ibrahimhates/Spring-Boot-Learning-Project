@@ -1,6 +1,6 @@
-package com.demolesson.learning.dao.concretes;
+package com.demolesson.learning.repositories.concretes;
 
-import com.demolesson.learning.dao.abstracts.IStudentDAO;
+import com.demolesson.learning.repositories.abstracts.IStudentDAO;
 import com.demolesson.learning.entity.Student;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;

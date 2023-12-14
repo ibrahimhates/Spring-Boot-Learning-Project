@@ -1,5 +1,5 @@
 package com.demolesson.learning.controller;
-import com.demolesson.learning.dao.abstracts.IStudentDAO;
+import com.demolesson.learning.repositories.abstracts.IStudentDAO;
 import com.demolesson.learning.entity.Student;
 import com.demolesson.learning.exception.notfound.StudentNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;

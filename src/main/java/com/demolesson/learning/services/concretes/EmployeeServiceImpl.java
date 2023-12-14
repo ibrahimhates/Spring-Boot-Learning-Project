@@ -1,6 +1,6 @@
 package com.demolesson.learning.services.concretes;
 
-import com.demolesson.learning.dao.abstracts.EmployeeDAO;
+import com.demolesson.learning.repositories.abstracts.EmployeeDAO;
 import com.demolesson.learning.entity.Employee;
 import com.demolesson.learning.exception.notfound.EmployeeNotFoundException;
 import com.demolesson.learning.services.abstracts.EmployeeService;

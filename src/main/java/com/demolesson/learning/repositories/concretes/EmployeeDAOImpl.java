@@ -1,11 +1,10 @@
-package com.demolesson.learning.dao.concretes;
+package com.demolesson.learning.repositories.concretes;
 
-import com.demolesson.learning.dao.abstracts.EmployeeDAO;
+import com.demolesson.learning.repositories.abstracts.EmployeeDAO;
 import com.demolesson.learning.entity.Employee;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
